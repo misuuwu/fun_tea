@@ -27,20 +27,20 @@ class MenuItem {
 final List<MenuItem> allMenuItems = [
   // TEA MENU (Classic Boba uses the live image URL)
   MenuItem(id: 1, name: 'Classic Boba', description: 'Chewy pearls in a creamy, sweet black milk tea. Our bestseller!', price: 4.50, icon: Icons.bubble_chart, category: 'tea', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/bubbletea.png'),
-  MenuItem(id: 2, name: 'Matcha Latte', description: 'Smooth, vibrant green tea with steamed milk. Energizing.', price: 5.00, icon: Icons.local_drink, category: 'coffee', imageUrl: 'matcha.png'),
-  MenuItem(id: 3, name: 'Taro Milk Tea', description: 'Sweet, nutty taro flavor with a beautiful purple hue. Unique and creamy.', price: 4.75, icon: Icons.opacity, category: 'tea', imageUrl: 'taro.png'),
-  MenuItem(id: 4, name: 'Jasmine Green Tea', description: 'Light and fragrant green tea, served hot or iced. Perfect palate cleanser.', price: 3.50, icon: Icons.eco, category: 'tea', imageUrl: 'jasmine.png'),
+  MenuItem(id: 2, name: 'Matcha Latte', description: 'Smooth, vibrant green tea with steamed milk. Energizing.', price: 5.00, icon: Icons.local_drink, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/macha.png'),
+  MenuItem(id: 3, name: 'Taro Milk Tea', description: 'Sweet, nutty taro flavor with a beautiful purple hue. Unique and creamy.', price: 4.75, icon: Icons.opacity, category: 'tea', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/taro.png'),
+  MenuItem(id: 4, name: 'Jasmine Green Tea', description: 'Light and fragrant green tea, served hot or iced. Perfect palate cleanser.', price: 3.50, icon: Icons.eco, category: 'tea', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/jasmine.png'),
 
   // COFFEE & ESPRESSO
-  MenuItem(id: 5, name: 'Americano', description: 'Bold espresso diluted with hot water. Simple and strong.', price: 3.00, icon: Icons.coffee_maker, category: 'coffee', imageUrl: 'americano.png'),
-  MenuItem(id: 6, name: 'Caramel Macchiato', description: 'Vanilla syrup, milk, espresso shots, and caramel drizzle.', price: 5.50, icon: Icons.local_bar, category: 'coffee', imageUrl: 'macchiato.png'),
-  MenuItem(id: 7, name: 'Cold Brew', description: 'Coffee steeped in cold water for 12 hours. Smooth and low acidity.', price: 4.25, icon: Icons.icecream, category: 'coffee', imageUrl: 'coldbrew.png'),
-  MenuItem(id: 10, name: 'Chai Latte', description: 'Spiced black tea concentrate mixed with steamed milk.', price: 4.80, icon: Icons.local_bar, category: 'coffee', imageUrl: 'chai.png'),
+  MenuItem(id: 5, name: 'Americano', description: 'Bold espresso diluted with hot water. Simple and strong.', price: 3.00, icon: Icons.coffee_maker, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/americano.png'),
+  MenuItem(id: 6, name: 'Caramel Macchiato', description: 'Vanilla syrup, milk, espresso shots, and caramel drizzle.', price: 5.50, icon: Icons.local_bar, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/macchiato.png'),
+  MenuItem(id: 7, name: 'Cold Brew', description: 'Coffee steeped in cold water for 12 hours. Smooth and low acidity.', price: 4.25, icon: Icons.icecream, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/coldbrew.png'),
+  MenuItem(id: 10, name: 'Chai Latte', description: 'Spiced black tea concentrate mixed with steamed milk.', price: 4.80, icon: Icons.local_bar, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/chai.png'),
 
   // SNACKS & PASTRIES
-  MenuItem(id: 8, name: 'Chocolate Croissant', description: 'Flaky pastry with a rich, dark chocolate center. Baked fresh daily.', price: 3.75, icon: Icons.cookie, category: 'snacks', imageUrl: 'croissant.png'),
-  MenuItem(id: 9, name: 'Matcha Muffin', description: 'A moist, light muffin infused with premium matcha powder.', price: 3.25, icon: Icons.donut_large, category: 'snacks', imageUrl: 'muffin.png'),
-  MenuItem(id: 11, name: 'Almond Biscotti', description: 'Crispy Italian biscuits, perfect for dipping in coffee or tea.', price: 2.50, icon: Icons.fastfood, category: 'snacks', imageUrl: 'biscotti.png'),
+  MenuItem(id: 8, name: 'Chocolate Croissant', description: 'Flaky pastry with a rich, dark chocolate center. Baked fresh daily.', price: 3.75, icon: Icons.cookie, category: 'snacks', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/croissant.png'),
+  MenuItem(id: 9, name: 'Matcha Muffin', description: 'A moist, light muffin infused with premium matcha powder.', price: 3.25, icon: Icons.donut_large, category: 'snacks', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/muffin.png'),
+  MenuItem(id: 11, name: 'Almond Biscotti', description: 'Crispy Italian biscuits, perfect for dipping in coffee or tea.', price: 2.50, icon: Icons.fastfood, category: 'snacks', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/biscotti.png'),
 ];
 
 /// Model and Data for the 5 Options (Sidebar)
