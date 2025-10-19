@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// --- 1. Mock Data and Models ---
 
 /// Model for a menu item, including category and optional image URL.
 class MenuItem {
@@ -8,9 +7,9 @@ class MenuItem {
   final String name;
   final String description;
   final double price;
-  final IconData icon; // Used as a fallback icon if no image URL is provided
-  final String category; // 'tea', 'coffee', 'snacks'
-  final String? imageUrl; // Network URL or filename placeholder
+  final IconData icon;
+  final String category;
+  final String? imageUrl;
 
   MenuItem({
     required this.id,
@@ -25,7 +24,7 @@ class MenuItem {
 
 // All Menu Data (Working Cards content)
 final List<MenuItem> allMenuItems = [
-  // TEA MENU (Classic Boba uses the live image URL)
+  // TEA MENU
   MenuItem(id: 1, name: 'Classic Boba', description: 'Chewy pearls in a creamy, sweet black milk tea. Our bestseller!', price: 55.50, icon: Icons.bubble_chart, category: 'tea', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/bubbletea.png'),
   MenuItem(id: 2, name: 'Matcha Latte', description: 'Smooth, vibrant green tea with steamed milk. Energizing.', price: 119.00, icon: Icons.local_drink, category: 'coffee', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/macha.png'),
   MenuItem(id: 3, name: 'Taro Milk Tea', description: 'Sweet, nutty taro flavor with a beautiful purple hue. Unique and creamy.', price: 110.75, icon: Icons.opacity, category: 'tea', imageUrl: 'https://raw.githubusercontent.com/misuuwu/funtea_assets/refs/heads/main/taro.png'),
@@ -78,14 +77,10 @@ class FunteaApp extends StatelessWidget {
       title: 'Funtea',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // NEW PRIMARY COLOR: Starbucks Green (Deep Green)
         primarySwatch: Colors.green,
-        // Using a modern, clean font aesthetic
         fontFamily: 'Roboto',
         appBarTheme: AppBarTheme(
-          // CHANGED: App Bar background to deep forest green
           backgroundColor: Colors.green.shade900,
-          // CHANGED: App Bar foreground (icons/text) to white for contrast
           foregroundColor: Colors.white,
           elevation: 1,
         ),
@@ -179,7 +174,7 @@ class _FunteaHomePageState extends State<FunteaHomePage> {
 
   Widget _buildDrawerContent({required bool isDrawer}) {
     return Container(
-      width: isDrawer ? null : 250, // Fixed width for permanent sidebar
+      width: isDrawer ? null : 250,
       color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -445,13 +440,13 @@ class _FunteaHomePageState extends State<FunteaHomePage> {
                   // START FIX HERE: Ensure the Column takes full available space and aligns content left
                   Expanded(
                     child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start, // **THIS IS THE CRITICAL FIX**
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
                           mockUserName,
                           style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                          overflow: TextOverflow.ellipsis, // Ensure name doesn't break vertically if it's too long horizontally
-                          maxLines: 1, // Keep the name on a single line if possible
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 1,
                         ),
                         const SizedBox(height: 4),
                         // The ID text is also constrained to prevent breaking
@@ -646,7 +641,7 @@ class _FunteaHomePageState extends State<FunteaHomePage> {
                     value: _maxPrice,
                     min: 2.0, // Minimum price of any item
                     max: 200.0, // Maximum price to filter by
-                    divisions: 80, // For smooth price steps (0.05 increments)
+                    divisions: 198, // For smooth price steps (0.05 increments)
                     label: '₱${_maxPrice.toStringAsFixed(2)}',
                     onChanged: (double newValue) {
                       setState(() {
